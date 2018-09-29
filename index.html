@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Watt Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <span class="nav-title">Power Tech-On Inverters</span>
+    </nav>
+    <div class="intro">
+      <h1>Which Inverter Do I Need?</h1>
+      <p>Please add the following information about the items you need to power:</p>
+
+    <div class="input-inverter-info">
+      <ul>
+        <li>Item:<input type="text" id="item" value="" class="inputs"></li>
+        <li>Amps:<input type="text" id="amps" value="" class="inputs"></li>
+        <li>Volts:<input type="text" id="volts" value="" class="inputs"></li>
+      </ul>
+      <button id="add-button" type="button">Add Appliance</button>
+      <table id="appliance-table">
+        <tbody id="tbody">
+          <tr>
+            <th>Item</th>
+            <th>Amps</th>
+            <th>Volts</th>
+            <th>Watts</th>
+          </tr>
+        </tbody>
+      </table>
+      <p id="total-watts">Total Watts: </p>
+    </div>
+    <button id="find-inverter-button" type="button">Find My Inverter</button>
+    </div>
+    <section class="inverter-result">
+      <div id="error-div"></div>
+      <div class="inverter-display-section">
+        <img id="inverter-image" src="" alt="">
+        <h1 id="inverter-model"></h1>
+        <ul id="inverter-info"></ul>
+      </div>
+    </section>
+<script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
